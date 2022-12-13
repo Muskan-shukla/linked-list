@@ -54,9 +54,6 @@ struct node* getNthLastNode(struct node* head, int n){
     for(i = 0; i < n-1; i++){
         front = front->next;
     }
-    /* Now, move both pointers together till front reaches 
-    last node of linked list. when front reaches last node 
-    back pointer will be pointing to Nth last node*/
     while(front->next != NULL){
         front = front->next;
         back = back->next;
